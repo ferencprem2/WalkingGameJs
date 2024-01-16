@@ -1,0 +1,35 @@
+:root{
+    --FRAME_PER_LINE: 5;    
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#skeleton {
+    height: 200px;
+    aspect-ratio: 1;
+    background: url("/assets/images/skeleton.png");
+    background-size: 500%;
+    background-size: calc(var(--FRAME_PER_LINE) * 100%);
+    image-rendering: pixelated;
+    position: absolute;
+    transition: left 0.2s;
+    transition: top 0.2s;
+
+}
+#gameArea{
+    width: 800px;
+    height: 600px;
+    background-color: rgb(170, 111, 226);
+}
